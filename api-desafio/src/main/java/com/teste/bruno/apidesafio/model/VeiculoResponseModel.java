@@ -10,6 +10,8 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 public class VeiculoResponseModel {
+    private Integer idVeiculo;
+
     private String nome;
 
     private String marca;

@@ -25,6 +25,7 @@ public class CalcularService {
 
         for (VeiculoModel veiculo: veiculos) {
             resposta.add(new VeiculoResponseModel(
+                    veiculo.getIdVeiculo(),
                     veiculo.getNome(),
                     veiculo.getMarca(),
                     veiculo.getModelo(),

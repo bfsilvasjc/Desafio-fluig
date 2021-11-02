@@ -34,7 +34,7 @@ Dependendo da IDE utilizada para executar poderá ser necessário o download e i
 - Exemplo IDEs que precisa instalar: Eclipse, STS, Red Hat Jboss Developer Studio.
 - Exemplo IDE que não precisa instalar: IntelliJ.
   
-Executar o arquivo Schema.sql presente nesse repositório para correta criação da tabela de banco de dados.
+Executar o arquivo Schema.sql presente nesse repositório para correta criação da tabela de banco de dados e para fazer uma população inicial com finalidade de gerar dados para os testes unitários.
 
 Para compilar e executar a API:
 
@@ -93,8 +93,37 @@ Para compilar e executar a API:
   
   ## 💻 Preview
   <h1 align="center">
-      <img src="./images/exemplo-api-status.webp" align="center"></img>
+      <img src="./images/exemplo-api-status.png" align="center"></img>
   </h1>
+  
+  <hr/>
+  
+  `/api/veiculo/{codigo}` : Usado para consultar o cadastro de um veículo pelo seu código.
+  
+  ## 💻 Preview
+  <h1 align="center">
+      <img src="./images/exemplo-api-calcular.png" align="center"></img>
+  </h1>
+  
+  Sendo os parâmetros:
+  - `preco` : Preço da gasolina R$
+  - `kmCidade` : Total de km que será percorrido dentro da cidade
+  - `kmRodovia` : Total de km que será percorrido em rodovias
+  
+  É retornado um JSON com as informações de resposta no modelo exemplificado abaixo:
+  
+   ``` bash
+    [
+      {
+        "nome": "Carrin top",
+        "marca": "Hyundai",
+        "modelo": "i30",
+        "ano": "2021-10-30T00:00:00.000+00:00",
+        "qtdCombustGasto": 4.0,
+        "valCombustivel": 40.0
+      }
+    ]
+  ```
 
 ## 📜 Licença
 

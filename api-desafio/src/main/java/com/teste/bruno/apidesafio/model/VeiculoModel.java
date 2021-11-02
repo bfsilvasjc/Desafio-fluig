@@ -1,8 +1,6 @@
 package com.teste.bruno.apidesafio.model;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
@@ -10,10 +8,20 @@ import java.util.Date;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @Entity(name = "veiculo")
 @Table(name="veiculo")
 @Data
 public class VeiculoModel {
+
+    public VeiculoModel(String nome, String marca, String modelo, Date data_fabric, Double cons_med_cidade, Double cons_med_rodov) {
+        this.setNome(nome);
+        this.setMarca(marca);
+        this.setModelo(modelo);
+        this.setData_fabric(data_fabric);
+        this.setCons_med_cidade(cons_med_cidade);
+        this.setCons_med_rodov(cons_med_rodov);
+    }
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
