@@ -130,6 +130,12 @@ Para compilar e executar a API:
       }
     ]
   ```
+  
+## 🏆 Desafios
+- [x] Cadastro e cálculo solicitado pelo desafio.
+- [x] Uso da ferramenta Swagger (desafio pessoal).
+- [x] Endpoint para consultar as informações de um veículo cadastrado pelo seu Id (desafio pessoal).
+- [x] Uso das ferramentas Spring-boot e Lombok (desafio pessoal).
 
 ## 📜 Licença
 
