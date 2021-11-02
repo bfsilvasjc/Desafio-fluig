@@ -23,6 +23,12 @@
 
 ## O projeto utiliza Spring-boot.
 
+## Swagger
+A ferramenta Swagger foi utilizada para a documentação com layout amigável e para testes/uso da API 
+através do caminho `localhost:8080/<context-path>/swagger-ui/`.
+
+**É possível testar a API através desta ferramenta substituindo a necessidade do Postman ou software equivalente.**
+
 ## 🚀 Instalação
 A porta padrão é **8080**. Ao iniciar seu projeto localmente, acesse `localhost:8080`.  
 Clone o projeto em seu computador e em seguida configure um servidor local no MySql, coloque a **string de conexão** no arquivo `api-desafio/src/main/resources/application.properties` na propriedade `spring.datasource.url` no modelo **jdbc:mysql://localhost:<ServerPortBD>/<DatabaseName>?useSSL=false**, e
