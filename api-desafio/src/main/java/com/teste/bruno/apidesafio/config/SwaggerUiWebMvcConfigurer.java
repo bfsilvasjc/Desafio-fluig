@@ -8,4 +8,5 @@ public class SwaggerUiWebMvcConfigurer implements WebMvcConfigurer {
     public SwaggerUiWebMvcConfigurer(String baseUrl) {
         this.baseUrl = baseUrl;
     }
+
 }

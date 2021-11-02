@@ -4,10 +4,8 @@ import com.teste.bruno.apidesafio.model.VeiculoModel;
 import com.teste.bruno.apidesafio.model.VeiculoResponseModel;
 import com.teste.bruno.apidesafio.repository.VeiculoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
